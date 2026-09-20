@@ -1,0 +1,35 @@
+{
+  "scripts": [
+    {
+      "path": "path/to/script1.py",
+      "description": "Daily Sales Report",
+      "schedule": { "type": "daily", "time": "11:00" }
+    },
+    {
+      "path": "path/to/backup.py",
+      "description": "Weekly Backup",
+      "schedule": {
+        "type": "weekly",
+        "days": ["Monday", "Friday"],
+        "time": "22:00"
+      }
+    },
+    {
+      "path": "path/to/reminder.py",
+      "description": "One-off Reminder",
+      "schedule": {
+        "type": "date",
+        "date": "2025-12-31",
+        "time": "23:59"
+      }
+    },
+    {
+      "path": "path/to/hourly_sync.py",
+      "description": "Hourly Sync (Business Hours, Weekdays)",
+      "schedule": {
+        "type": "cron",
+        "expression": "0 9-18 * * MON-FRI"
+      }
+    }
+  ]
+}

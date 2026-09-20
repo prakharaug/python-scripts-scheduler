@@ -1,0 +1,6 @@
+*.log.*
+master_runner.log
+runner_state.json
+scripts_config.json
+__pycache__/
+*.pyc
